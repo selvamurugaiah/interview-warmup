@@ -1,0 +1,26 @@
+.login {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+  }
+  
+  .login button {
+    display: flex;
+    align-items: center; 
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login button img {
+    width: 24px; 
+    height: 24px;
+    margin-right: 10px; 
+  }
+
+  
+  

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans&display=swap');
+
+body {
+  font-family: 'Google Sans', sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #f7f8fa;
+  font-family: 'Google Sans', sans-serif;
+  box-shadow: 0 4px 4px rgb(246, 227, 244);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.brand {
+  text-decoration: none;
+  font-size: 23px;
+  color: rgb(108, 118, 134);
+}
+
+.brand-color {
+  background: linear-gradient(to right, 
+    rgb(91, 202, 248),
+    rgb(115, 200, 244),
+    rgb(122, 191, 239),
+    rgb(182, 201, 237),
+    rgb(166, 176, 226),
+    rgb(210, 186, 226),
+    rgb(228, 187, 224),
+    rgb(232, 161, 211)
+  );
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent;
+}
+
+.main-content {
+  background-color: rgb(237,240,245);
+  height: calc(100vh - 180px);
+  overflow-y: auto;
+  padding-top: 200px;
+  font-family: 'Google Sans', sans-serif;
+}
+
+.main-content h1 {
+  font-size: 80px;
+  font-weight: 500;
+  font-family: 'Google Sans', sans-serif;
+  text-align: center;
+}
+
+.main-content p {
+  font-size: 21px;
+  font-weight:500;
+  color: rgb(108, 118, 134);
+}
+.main-content span{
+  color: #1b6ef3;
+  
+}
+
+
+.topic{
+  background: linear-gradient(to right, 
+  rgb(162, 226, 249),
+  rgb(94, 201, 248),
+  rgb(116, 201, 245),
+  rgb(133, 206, 246),
+  rgb(165, 203, 247),
+  rgb(134, 187, 236),
+  rgb(142, 184, 233),
+  rgb(158, 186, 233),
+  rgb(181, 184, 233),
+  rgb(208, 190, 233),
+  rgb(229, 194, 228),
+  rgb(232, 161, 211)
+);
+-webkit-background-clip: text; 
+background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: shine 18s linear;
+color: transparent;
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+.topics{
+  font-size: 21px;
+}
+
+.footer {
+  background-color: rgb(247, 248, 250);
+  color: rgb(199, 199, 199);
+  box-shadow: 4px 0px 0px 1px rgb(222, 220, 222); 
+  justify-content: space-between;
+  font-family: 'Google Sans', sans-serif;
+  height: 110px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer h1 {
+  margin: 40px; 
+  font-size: 30px;
+  text-align: left; 
+}
+
+.footer p {
+  margin-right: 70px; 
+  font-size: 15px;
+  text-align: right;
+}
+
+/* button style */
+.btn{
+  background-color: #1b6ef3;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: #1b6ef3;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.btn:hover{
+cursor: pointer;
+}
+
+/* video-container css */
+
+.video-area-1{
+  background-color: rgb(228,231,238);
+  text-align: center;
+  width: 900px;
+  height: 500px;
+  border-radius: 15px;
+   border: 1px solid gray;
+}
+.video-area-2{
+  background-color: rgb(228,231,238);
+  text-align: center;
+  height: 500px;
+  width: 900px;
+  margin-top: 0;
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+.video-area-3{
+  background-color: rgb(228,231,238);
+  text-align: center;
+  height: 500px;
+  width: 900px;
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+.video-area{
+  background-color: rgb(255,255,255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.working{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+.first-container{
+  position: relative;
+  bottom: 125px;
+}
+.second-container{
+  position: relative;
+  bottom: 125px;
+}
+.third-container{
+  position: relative;
+  bottom: 125px;
+}
+.video-area p{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  .video-area-1,
+  .video-area-2,
+  .video-area-3 {
+    width: 90%;
+    margin-left: 70px;
+    
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Adjustments for screens smaller than 480px width */
+  .navbar {
+    height: 40px;
+  }
+  
+  .main-content {
+    padding-top: 120px;
+  }
+  
+  .video-area-1,
+  .video-area-2,
+  .video-area-3 {
+    width: 80%;
+    margin-left: 40px;
+  }
+}
