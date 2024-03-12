@@ -55,7 +55,7 @@ export const LandingPage = () => {
   useEffect(() => {
     const splitText = new SplitTextJS(headingRef.current, { type: "chars" });
     const chars = Array.from(splitText.chars); 
-
+  
     gsap.from(chars, {
       opacity: 0,
       y: 20,
@@ -63,13 +63,13 @@ export const LandingPage = () => {
       duration: 2,
       ease: "power3.out",
     });
-
+  
     // Apply color to characters corresponding to "interview"
     const interviewChars = chars.slice(0, 9);
     interviewChars.forEach((char) => {
       char.style.color = "rgb(108, 118, 134)";
     });
-
+  
     // Apply linear gradient color to characters corresponding to "warmup"
     const warmupChars = chars.slice(10);
     warmupChars.forEach((char) => {
@@ -87,11 +87,8 @@ export const LandingPage = () => {
       char.style["-webkit-background-clip"] = "text";
       char.style.color = "transparent";
     });
-
-    return () => {
-      splitText.revert();
-    };
   }, []);
+  
 
   useEffect(() => {
     const topicDiv = document.querySelector(".main-text");

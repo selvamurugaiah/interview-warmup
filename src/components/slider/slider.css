@@ -59,50 +59,11 @@
   .card1 {
     background-color: rgb(224, 227, 234);
     margin: 20px;
-    border: 1px solid rgb(204, 202, 202);
     padding: 20px;
-    width: 200px;
-    height: 75px;
+    width: 300px;
+    height: 175px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    position: absolute; 
-    transition: transform 1s ease-in-out; 
   }
-  
-  .bar-1,
-  .bar-2,
-  .bar-3 {
-    background-color: rgb(179, 179, 179);
-  }
-  
-  .bar-1 {
-    width: 100%;
-    height: 20px;
-    border-radius: 5px;
-  }
-  
-  .bar-2 {
-    width: 50%;
-    height: 20px;
-    border-radius: 5px;
-  }
-  
-  .bar-3 {
-    width: 20%;
-    height: 25px;
-    border-radius: 2px;
-  }
-  
-  @keyframes moveCard {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
- .card1:hover{
-   background-color: white;
- }
+
