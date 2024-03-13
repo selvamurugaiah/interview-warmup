@@ -8,15 +8,11 @@
     display: none;
 }
   
-.question-intro {
+/* .question-intro {
     display: flex;
     flex-direction: column;
     width: 800px;
     height: 200px;
     border: 1px solid gray;
-}
+} */
 
-
-.question-intro.hidden {
-    border: none;
-}

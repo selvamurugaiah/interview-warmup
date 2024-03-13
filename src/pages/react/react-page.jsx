@@ -36,7 +36,7 @@ const ReactPage = () => {
         onComplete: () => setShowQuestions(true) 
       });
       return () => {
-        splitText.revert();
+        
       };
     }
   }, []);
