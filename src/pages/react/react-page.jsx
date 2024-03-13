@@ -33,7 +33,7 @@ const ReactPage = () => {
         stagger: 0.1,
         duration: 2,
         ease: "power3.out",
-        onComplete: () => setShowQuestions(true) // Show questions after animation completes
+        onComplete: () => setShowQuestions(true) 
       });
       return () => {
         splitText.revert();

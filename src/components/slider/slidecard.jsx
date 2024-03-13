@@ -9,7 +9,7 @@ const SlideCard = () => {
             <div className="card1">
                 <video
                     ref={videoRef}
-                    className="video-area-3"
+                    className="video"
                     autoPlay
                     muted
                     loop
