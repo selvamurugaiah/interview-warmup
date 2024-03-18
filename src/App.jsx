@@ -1,4 +1,4 @@
-
+import 'regenerator-runtime/runtime'
 import './App.css'
 import { LandingPage } from './pages/landing-page/landing-page'
 import { Route, Routes } from 'react-router-dom'
@@ -8,6 +8,7 @@ import Category from './pages/category/category'
 import DataAnalytics from './pages/data-analytics/data-analytics'
 import Slide from './components/slider/slide'
 import ReactPage from './pages/react/react-page'
+
 
 function App() {
   
